@@ -52,4 +52,85 @@ a {
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-6 {
+    flex-basis: calc((100% / 12) * 6);
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-12 {
+    flex-basis: calc((100% / 12) * 12);
+}
+
+/* debug */
+
+.debug .container,
+.debug .container-medium,
+.debug .container-small  {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+.debug .row {
+    border: 1px solid red;
+    padding: 10px;
+}
+.debug [class^="col"] {
+    border: 1px solid orange;
+    padding: 10px;
+}
+
+
+/* component classes */
+
+.button {
+    color: black;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 0 18px;
+}
+
+/* inizio header */
+
+
+.page-header {
+    background-color: var(--blue);
+}
+
+.navbar-header {
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--light);
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+ }
+
 
