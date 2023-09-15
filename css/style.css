@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    display: inline-block;
+}
+/* palette colori */
+
+:root {
+    --blue:#0084FD;
+    --light-blue:#B5DDFF;
+    --purple:#9792E4;
+    --yellow:#FDC15F;
+    --dark-grey:#333333;
+    --light:#FFFFFF;
+
+}
+/* layouts */
+
+.container {
+    max-width: 1164px;
+    margin: 0 auto;
+}
+
+.container-medium {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+
