@@ -139,21 +139,34 @@ a {
 .card-body {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .card-50 {
     flex-basis: 50%;
 }
+
+.card-50 {
+    flex-basis: 50%;
+}
+
 .card-list-one {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     padding: 15px;
+
 }
 
 .hero-card-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.image {
+    width: 70%;
     display: block;
-    max-width: 80%;
 }
 
 .card-list {
@@ -162,6 +175,7 @@ a {
     gap: 15px;
     text-align: center;
     padding: 13px;
+    height: 100%;
 }
 
 
@@ -199,11 +213,19 @@ a {
         display: none;
     }
 
+    .card-50:first-child {
+        flex-basis: 100%;
+    }
+
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     
+    .col-100 {
+        flex-basis: 100%;
+    }
  }
 
 
