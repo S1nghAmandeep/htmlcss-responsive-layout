@@ -46,11 +46,14 @@ a {
 .container-medium {
     max-width: 1050px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .container-small {
     max-width: 880px;
     margin: 0 auto;
+    padding: 0 20px;
+
 }
 
 .row {
@@ -180,8 +183,8 @@ a {
 .card-list-one {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 20px;
+    gap: 20px;
+    padding: 30px 20px;
 
 }
 
@@ -201,7 +204,7 @@ a {
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    padding: 13px;
+    padding: 20px 20px;
     height: 100%;
 }
 
@@ -219,6 +222,11 @@ a {
 
 .hero-title {
     color: var(--blue);
+    font-size: 20px;
+}
+
+.hero-description {
+    font-weight: 500;
 }
 
 .hero-button {
@@ -231,7 +239,7 @@ a {
 
 .section-2 {
     background-color: var(--purple);
-    padding: 130px 20px 60px 20px;
+    padding: 130px 0 60px;
 }
 
 .section-2 [class^="col"] {
@@ -298,7 +306,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--purple);
-    border-radius: 20px;
+    border-radius: 40px;
     justify-content: center;
     padding: 20px 10px;
 }
@@ -313,6 +321,7 @@ a {
     color: var(--light);
     text-transform: uppercase;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .card-text-sec-3 {
@@ -381,6 +390,10 @@ a {
     padding: 0 15px;
 }
 
+.section-5 [class^="row"] {
+    flex-wrap: nowrap;
+}
+
 .section-5{
     padding: 100px 0 150px;
 }
@@ -405,13 +418,15 @@ a {
 }
 
 .image-container {
+    height: 250px;
+    width: 250px;
     position: relative;
 }
 
 .quote {
     position: absolute;
-    top: 0;
-    right: 60px;
+    top: -20px;
+    right: -20px;
     font-size: 80px;
     color: var(--purple);
 }
@@ -522,6 +537,16 @@ footer [class^="col"] {
         justify-content: flex-start;
     }
 
+    /* sezione-3 */
+
+    .section-3 [class^="col-2"] {
+        flex-basis: calc((100% / 12) * 4);
+    }
+
+    .section-3 [class^="col-10"] {
+        flex-basis: calc((100% / 12) * 8);
+    }
+
     /* sezione-4 */
 
     .section-4 [class^="col-4"] {
@@ -533,6 +558,10 @@ footer [class^="col"] {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+
+    .container {
+        padding: 0 20px;
+    }
 
     /* sezione-hero */
     
@@ -553,9 +582,14 @@ footer [class^="col"] {
 
       /* sezione-3 */
 
-      .col-40 {
+
+    .section-3 [class^="col-2"] {
         flex-basis: 40%;
-      }
+    }
+
+    .section-3 [class^="col-10"] {
+        flex-basis: 100%;
+    }
 
       .card-text-sec-3 {
         flex-basis: 100%;
@@ -567,20 +601,42 @@ footer [class^="col"] {
 
       .section-4 [class^="col-4"] {
         flex-basis: 100%;
-    }
+       }
 
        /* sezione-5 */
+
+       .section-5 {
+        padding: 90px 0 80px;
+       }
 
        .section-5 [class^="col"] {
         flex-basis: 100%;
        }
 
-       /* sezione-6 */
+       .section-5 [class^="row"] {
+        flex-wrap: wrap;
+       }
 
-       .text-space{
+        .image-section-5 {
+            height: 180px;
+            width: 180px;
+        }
+        
+        .image-container {
+            height: 180px;
+            width: 180px;
+        }
+
+        /* sezione-6 */
+
+       .text-space {
         display: none;
        }
- }  
+  
+
+    }
+
+       
 
 
 
