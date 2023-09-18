@@ -376,9 +376,15 @@ a {
 
 /* inizio sezione-5 */
 
+
+.section-5 [class^="col"] {
+    padding: 0 15px;
+}
+
 .section-5{
     padding: 100px 0 150px;
 }
+
 .title-section-5 {
     font-size: 55px;
     color: var(--purple);
@@ -420,6 +426,10 @@ a {
 
 /* inizio sezione 6 */
 
+.section-6 [class^="col"] {
+    padding: 0 15px;
+}
+
 .section-6 {
     background-color: var(--purple);
     padding: 70px 0;
@@ -455,6 +465,30 @@ a {
     color: var(--purple);
 }
 
+
+/* inizio footer */
+
+footer [class^="col"] {
+    padding: 0 15px;
+}
+
+.bg-black {
+    background-color: var(--dark-grey);
+    padding: 45px 0;
+}
+
+.footer-text {
+    color: var(--light);
+    text-align: center;
+}
+
+.footer-description {
+    margin-bottom: 50px;
+}
+
+.link-text {
+    color: var(--purple);
+}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
