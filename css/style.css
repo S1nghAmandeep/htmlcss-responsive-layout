@@ -239,7 +239,7 @@ a {
 }
 
 .planing-title {
-    padding: 140px 0 40px 0;
+    margin: 140px 0 40px 0;
     font-size: 30px;
     color: var(--light);
 }
@@ -277,7 +277,7 @@ a {
 }
 
 .section-3 [class^="col-12"] {
-    padding: 0 40px;
+    padding: 0 15px;
 }
 
 .title-section-3 {
@@ -330,6 +330,49 @@ a {
     justify-content: center;
 }
 
+/* inizio sezione 4 */
+
+.section-4 [class^="col"] {
+    padding: 0 15px;
+}
+
+.section-4 {
+    background-color: var(--purple);
+    padding: 80px 0 60px;
+}
+
+.title-section-4 {
+    font-size: 35px;
+    text-align: center;
+    color: var(--light);
+    padding-bottom: 40px;
+}
+
+.list-body-section-4 {
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 40px 35px 30px;
+}
+
+.benefits-number {
+    color: var(--purple);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.benefits-title {
+    color: var(--purple);
+    margin: 25px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.benefit-button {
+    background-color: var(--purple);
+    padding: 0 50px;
+    color: var(--light);
+    margin-top: 25px;
+}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
@@ -356,11 +399,17 @@ a {
     }
 
     .planing-title {
-        padding: 34px 0 40px 0;
+        font-size: 50px;
     }
 
     .hero-card-image {
         justify-content: flex-start;
+    }
+
+    /* sezione-4 */
+
+    .section-4 [class^="col-4"] {
+        flex-basis: 50%;
     }
 
 
@@ -381,6 +430,11 @@ a {
         justify-content: space-around;
     }
 
+    .planing-title {
+        font-size: 30px;
+    }
+
+
       /* sezione-3 */
 
       .col-40 {
@@ -391,8 +445,13 @@ a {
         flex-basis: 100%;
         text-align: center;
         padding-left: 0px;
-
       }
+
+      /* sezione-4 */
+
+      .section-4 [class^="col-4"] {
+        flex-basis: 100%;
+    }
  }  
 
 
